@@ -1,0 +1,36 @@
+7
+Programming Foundations I
+Fall 2015
+CSCE 2004
+B
+4
+Digital Design
+Fall 2015
+CSCE 2114
+C
+4
+Programming Foundations II
+Spring 2016
+CSCE 2014
+A
+4
+Introduction to engineering I
+Spring 2015
+CNEG 1111
+D
+1
+Introduction to engineering II
+Fall 2015
+CNEG 1121
+A
+1
+Calculus I
+Fall 2015
+MATH 2554
+A
+4
+Composition I
+Spring 2015
+ENGL 1013
+A
+3
