@@ -19,7 +19,7 @@ class Course
 
     void print() const;
 
-  private
+  private:
     string courseName;
     string courseTime;
     string courseNumber;
