@@ -9,6 +9,65 @@ using namespace std;
 
 int const COURSE_MAX = 10;
 
+class course
+{
+  public:
+    Course();
+
+    void get(string& name, string& time, string& number, char& g, int& h) const;
+    void set(string name, string time, string number, char g, int h);
+
+    void print() const;
+
+  private
+    string courseName;
+    string courseTime;
+    string courseNumber;
+    char grade;
+    int hours;
+
+};
+
+Course::Course()
+{
+  this.courseName = "Programming foundations I";
+  this.courseTime = "Fall 2015";
+  this.courseNumber = "CSCE 2004";
+  this.grade = 'A';
+  this.hours = 4;
+}
+
+Course::get(string& name, string& time, string& number, char& g, int& h) const
+{
+  name = this.courseName;
+  time = this.courseTime;
+  number = this.courseNumber;
+  g = this.grade;
+  h = this.hours;
+}
+
+Course::set(string name, string time, string number, char g, int h)
+{
+  this.courseName = name;
+  this.courseTime = time;
+  this.courseNumber = number;
+  this.grade = g;
+  this.hours = h;
+}
+
+Course::print()
+{
+  const char s = ' ';
+  const int w = 40;
+
+  cout << left << setw(w) << setfill(s) << this.courseName;
+  cout << left << setw(w) << setfill(s) << this.courseTime;
+  cout << left << setw(w) << setfill(s) << this.courseNumber;
+  cout << left << setw(w) << setfill(s) << this.grade;
+  cout << left << setw(w) << setfill(s) << this.hours;
+  cout << endl;
+}
+
 bool reading(const char filename[], string name[], string time[], string number[], char grade[], int hours[], int& n, int capacity)
 {
   // filename is course file on disk to be read

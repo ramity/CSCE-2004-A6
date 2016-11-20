@@ -1,0 +1,107 @@
+University Core
+English
+6
+ENGL 1013
+3
+ENGL 1023
+3
+
+University Core
+Fine Arts
+3
+ARCH 1003
+3
+ARHS 1003
+3
+COMM 1003
+3
+DANC 1003
+3
+ENGL 2023
+3
+HUMN 2114H
+4
+LARC 1003
+3
+MLIT 1003
+3
+MLIT 1013
+3
+THTR 1003
+3
+THTR 1013
+3
+
+Computer Science
+Math
+17
+MATH 2554
+4
+MATH 2564
+4
+MATH 2603
+3
+MATH 3103
+3
+MATH 3083
+3
+
+Computer Science
+CSCE
+50
+CSCE 2004
+4
+CSCE 2114
+4
+CSCE 2014
+4
+CSCE 2214
+4
+CSCE 3193
+3
+CSCE 3313
+3
+CSCE 3613
+3
+CSCE 3513
+3
+CSCE 4561
+1
+CSCE 4523
+3
+CSCE elective
+3
+CSCE elective
+3
+CSCE elective
+3
+CSCE 4963
+3
+CSCE 4323
+3
+CSCE elective
+3
+
+Computer Science
+Misc
+9
+COMM 1313
+3
+PHIL 3103
+3
+STAT 3013
+3
+INEG 2313
+3
+
+Computer Science
+Basic Science
+8
+PHYS 2054
+4
+PHYS 2074
+4
+CHEM 1113
+4
+CHEM 1133
+4
