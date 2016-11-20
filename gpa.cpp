@@ -9,7 +9,7 @@ using namespace std;
 
 int const COURSE_MAX = 10;
 
-class course
+class Course
 {
   public:
     Course();
