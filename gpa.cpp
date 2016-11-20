@@ -55,7 +55,7 @@ void Course::set(string name, string time, string number, char g, int h)
   this->hours = h;
 }
 
-void Course::print()
+void Course::print() const
 {
   const char s = ' ';
   const int w = 40;
