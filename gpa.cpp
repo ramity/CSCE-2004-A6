@@ -463,6 +463,7 @@ int main ()
 
   //init all vars
   //initalizes all array vars based on defined validated input above
+  Course courseClasses[COURSE_MAX];
   string courseNames[COURSE_MAX];
   string semesters[COURSE_MAX];
   string courseNumbers[COURSE_MAX];

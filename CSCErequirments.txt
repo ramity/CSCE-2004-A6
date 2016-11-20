@@ -32,6 +32,18 @@ THTR 1003
 THTR 1013
 3
 
+University Core
+Basic Science
+8
+PHYS 2054
+4
+PHYS 2074
+4
+CHEM 1113
+4
+CHEM 1133
+4
+
 Computer Science
 Math
 17
@@ -48,7 +60,7 @@ MATH 3083
 
 Computer Science
 CSCE
-50
+38
 CSCE 2004
 4
 CSCE 2114
@@ -69,17 +81,9 @@ CSCE 4561
 1
 CSCE 4523
 3
-CSCE elective
-3
-CSCE elective
-3
-CSCE elective
-3
 CSCE 4963
 3
-CSCE 4323
-3
-CSCE elective
+CSCE 4323ac
 3
 
 Computer Science
@@ -95,13 +99,17 @@ INEG 2313
 3
 
 Computer Science
-Basic Science
-8
-PHYS 2054
-4
-PHYS 2074
-4
-CHEM 1113
-4
-CHEM 1133
-4
+CSCE elective
+12
+CSCE elective
+3
+CSCE elective
+3
+CSCE elective
+3
+CSCE elective
+3
+
+Computer Science
+Free Electives
+9
