@@ -545,19 +545,19 @@ int main ()
   {
     char menuSelector = menu();
 
-    if(menuSelector == 'A' || menuSelector == 'a')
+    if(menuSelector == 'A')
     {
       cout << "Congratulations, your GPA was " << gpa(courses, courseGrades, courseHours) << endl;
     }
-    else if(menuSelector == 'B' || menuSelector == 'b')
+    else if(menuSelector == 'B')
     {
       print(courses, courseNames, semesters, courseNumbers, courseGrades, courseHours);
     }
-    else if(menuSelector == 'C' || menuSelector == 'c')
+    else if(menuSelector == 'C')
     {
       cout << "Total hours with D grades are " << DRule(courses, courseGrades, courseHours) << endl;
     }
-    else if(menuSelector == 'D' || menuSelector == 'd')
+    else if(menuSelector == 'D')
     {
       double tempGPA = 0;
       string selectedSemester = "";
@@ -586,7 +586,7 @@ int main ()
 
       cout << "Congratulations, your GPA was " << semesterGpa(courses, semesters, courseGrades, courseHours, selectedSemester) << " in " << selectedSemester << endl;
     }
-    else if(menuSelector == 'E' || menuSelector == 'e')
+    else if(menuSelector == 'E')
     {
       if(courses + 1 < COURSE_MAX)
       {
@@ -599,7 +599,7 @@ int main ()
         cout << "Unable to add more than 10 classes" << endl;
       }
     }
-    else if(menuSelector == 'F' || menuSelector == 'f')
+    else if(menuSelector == 'F')
     {
       if(courses - 1 >= 0)
       {
@@ -635,7 +635,7 @@ int main ()
         cout << "There are not any courses to remove" << endl;
       }
     }
-    else if(menuSelector == 'Q' || menuSelector == 'q')
+    else if(menuSelector == 'Q')
     {
       if(selectedFilename == "")
       {
