@@ -39,20 +39,20 @@ Course::Course()
 
 void Course::get(string& name, string& time, string& number, char& g, int& h) const
 {
-  name = this.courseName;
-  time = this.courseTime;
-  number = this.courseNumber;
-  g = this.grade;
-  h = this.hours;
+  name = this->courseName;
+  time = this->courseTime;
+  number = this->courseNumber;
+  g = this->grade;
+  h = this->hours;
 }
 
 void Course::set(string name, string time, string number, char g, int h)
 {
-  this.courseName = name;
-  this.courseTime = time;
-  this.courseNumber = number;
-  this.grade = g;
-  this.hours = h;
+  this->courseName = name;
+  this->courseTime = time;
+  this->courseNumber = number;
+  this->grade = g;
+  this->hours = h;
 }
 
 void Course::print()
@@ -60,11 +60,11 @@ void Course::print()
   const char s = ' ';
   const int w = 40;
 
-  cout << left << setw(w) << setfill(s) << this.courseName;
-  cout << left << setw(w) << setfill(s) << this.courseTime;
-  cout << left << setw(w) << setfill(s) << this.courseNumber;
-  cout << left << setw(w) << setfill(s) << this.grade;
-  cout << left << setw(w) << setfill(s) << this.hours;
+  cout << left << setw(w) << setfill(s) << this->courseName;
+  cout << left << setw(w) << setfill(s) << this->courseTime;
+  cout << left << setw(w) << setfill(s) << this->courseNumber;
+  cout << left << setw(w) << setfill(s) << this->grade;
+  cout << left << setw(w) << setfill(s) << this->hours;
   cout << endl;
 }
 
