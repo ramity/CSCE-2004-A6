@@ -68,21 +68,8 @@ void Course::print() const
   cout << endl;
 }
 
-bool reading(const char filename[], string name[], string time[], string number[], char grade[], int hours[], int& n, int capacity)
+bool reading(const char filename[], string name[], string time[], string number[], char grade[], int hours[], int& n, int capacity, Course courseClasses[])
 {
-  // filename is course file on disk to be read
-  // name is an array of course names
-  // time is an array of semester and year a course was taken
-  // number is an array of course numbers
-  // grade is an array of letter grades
-  // hours is an array of credit hours
-  // n is the number of courses read upon return
-  // capacity indicates the max elements the arrays may hold
-  // the function returns true if file open and reading
-  // are successful, otherwise it returns false
-  // the function reads course information from the file
-  // and stores the information to the arrays
-
   fstream file;
   file.open(filename);
 
@@ -110,6 +97,9 @@ bool reading(const char filename[], string name[], string time[], string number[
         file >> grade[z];
         file >> hours[z];
         file.ignore();
+
+        //class
+        courseClasses[z]->set(name[z], time[z], number[z], grade[z], hours[z]);
       }
     }
     else
@@ -125,18 +115,6 @@ bool reading(const char filename[], string name[], string time[], string number[
 
 bool writing(const char filename[], const string name[], const string time[], const string number[], const char grade[], const int hours[], int n)
 {
-  // filename is course file on disk to be written
-  // name is an array of course names
-  // time is an array of semester and year a course was taken
-  // number is an array of course numbers
-  // grade is an array of letter grades
-  // hours is an array of credit hours
-  // n is the number of courses in the arrays
-  // the function returns true if file open and writing
-  // are successful, otherwise it returns false
-  // the function stores course information of the arrays
-  // to the file, similar to listing function of project 4
-
   //nuke the file
   if(remove(filename) != 0)
   {
@@ -314,7 +292,7 @@ void print(int n, string names[], string times[], string numbers[], char grades[
   cout << endl;
 }
 
-void getCourse(string& name, string& time, string& number, char& grade, int& hours, int n)
+void getCourse(string& name, string& time, string& number, char& grade, int& hours, int n, Course courseClass)
 {
   //name
   cout << "Enter the course name (e.g. Programming Foundations I) for class number " << n << endl;
@@ -396,6 +374,8 @@ void getCourse(string& name, string& time, string& number, char& grade, int& hou
   }
 
   cin.ignore();
+
+  courseClass->set(name, time, number, grade, hours);
 }
 
 char menu()
@@ -502,7 +482,7 @@ int main ()
 
     if(mode == "y")
     {
-      reading("courses.txt", courseNames, semesters, courseNumbers, courseGrades, courseHours, courses, COURSE_MAX);
+      reading("courses.txt", courseNames, semesters, courseNumbers, courseGrades, courseHours, courses, COURSE_MAX, courseClasses);
     }
     else
     {
@@ -515,7 +495,7 @@ int main ()
         getline(cin, selectedFilename);
       }
 
-      reading(selectedFilename.c_str(), courseNames, semesters, courseNumbers, courseGrades, courseHours, courses, COURSE_MAX);
+      reading(selectedFilename.c_str(), courseNames, semesters, courseNumbers, courseGrades, courseHours, courses, COURSE_MAX, courseClasses);
     }
   }
 
@@ -536,7 +516,7 @@ int main ()
     for(int step = 0;step < courses;step++)
     {
       //comeback
-      getCourse(courseNames[step], semesters[step], courseNumbers[step], courseGrades[step], courseHours[step], courses);
+      getCourse(courseNames[step], semesters[step], courseNumbers[step], courseGrades[step], courseHours[step], courses, courseClasses[step]);
     }
   }
 
@@ -593,7 +573,7 @@ int main ()
       {
         courses++;
 
-        getCourse(courseNames[courses - 1], semesters[courses - 1], courseNumbers[courses - 1], courseGrades[courses - 1], courseHours[courses - 1], courses);
+        getCourse(courseNames[courses - 1], semesters[courses - 1], courseNumbers[courses - 1], courseGrades[courses - 1], courseHours[courses - 1], courses, courseClasses[courses - 1]);
       }
       else
       {
