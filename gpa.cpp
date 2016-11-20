@@ -30,14 +30,14 @@ class Course
 
 Course::Course()
 {
-  this.courseName = "Programming foundations I";
-  this.courseTime = "Fall 2015";
-  this.courseNumber = "CSCE 2004";
-  this.grade = 'A';
-  this.hours = 4;
+  courseName = "Programming foundations I";
+  courseTime = "Fall 2015";
+  courseNumber = "CSCE 2004";
+  grade = 'A';
+  hours = 4;
 }
 
-Course::get(string& name, string& time, string& number, char& g, int& h) const
+void Course::get(string& name, string& time, string& number, char& g, int& h) const
 {
   name = this.courseName;
   time = this.courseTime;
@@ -46,7 +46,7 @@ Course::get(string& name, string& time, string& number, char& g, int& h) const
   h = this.hours;
 }
 
-Course::set(string name, string time, string number, char g, int h)
+void Course::set(string name, string time, string number, char g, int h)
 {
   this.courseName = name;
   this.courseTime = time;
@@ -55,7 +55,7 @@ Course::set(string name, string time, string number, char g, int h)
   this.hours = h;
 }
 
-Course::print()
+void Course::print()
 {
   const char s = ' ';
   const int w = 40;
