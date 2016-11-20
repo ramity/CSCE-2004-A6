@@ -68,7 +68,7 @@ void Course::print() const
   cout << endl;
 }
 
-bool reading(const char filename[], string name[], string time[], string number[], char grade[], int hours[], int& n, int capacity, Course& courseClasses[])
+bool reading(const char filename[], string name[], string time[], string number[], char grade[], int hours[], int& n, int capacity, Course courseClasses[])
 {
   fstream file;
   file.open(filename);
