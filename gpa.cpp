@@ -99,7 +99,7 @@ bool reading(const char filename[], string name[], string time[], string number[
         file.ignore();
 
         //class
-        courseClasses[z]->set(name[z], time[z], number[z], grade[z], hours[z]);
+        courseClasses[z].set(name[z], time[z], number[z], grade[z], hours[z]);
       }
     }
     else
@@ -375,7 +375,7 @@ void getCourse(string& name, string& time, string& number, char& grade, int& hou
 
   cin.ignore();
 
-  courseClass->set(name, time, number, grade, hours);
+  courseClass.set(name, time, number, grade, hours);
 }
 
 char menu()
