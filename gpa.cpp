@@ -292,7 +292,7 @@ void print(int n, string names[], string times[], string numbers[], char grades[
   cout << endl;
 }
 
-void getCourse(string& name, string& time, string& number, char& grade, int& hours, int n, Course courseClass)
+void getCourse(string& name, string& time, string& number, char& grade, int& hours, int n, Course& courseClass)
 {
   //name
   cout << "Enter the course name (e.g. Programming Foundations I) for class number " << n << endl;
