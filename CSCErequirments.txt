@@ -83,7 +83,7 @@ CSCE 4523
 3
 CSCE 4963
 3
-CSCE 4323ac
+CSCE 4323
 3
 
 Computer Science

@@ -604,6 +604,8 @@ int main ()
           courseNumbers[z - 1] = courseNumbers[z];
           courseGrades[z - 1] = courseGrades[z];
           courseHours[z - 1] = courseHours[z];
+
+          courseClasses[z - 1].set(courseNames[z], semesters[z], courseNumbers[z], courseGrades[z], courseHours[z]);
         }
 
         //with this method, all ___[courses] still exist,
